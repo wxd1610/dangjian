@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>先立智慧党建云平台</title>
+    <style>
+        .el-pager li.active {
+            color: #fff !important;
+            cursor: default;
+            background: red !important;
+            border-radius: 5px !important;
+            border: none;
+        }
+        
+        .el-pager li {
+            background: rgba(0, 0, 0, 0) !important;
+            width: 37px !important;
+            height: 37px !important;
+            line-height: 35px !important;
+            margin: 0 0.1rem !important;
+            border-radius: 5px !important;
+            border: 1px solid #ccc !important;
+        }
+        
+        .el-pagination .btn-next,
+        .el-pagination .btn-prev {
+            background: rgba(0, 0, 0, 0) !important;
+            width: 35px !important;
+            height: 35px !important;
+            line-height: 35px !important;
+            border: 1px solid #ccc !important;
+            text-align: center !important;
+            padding: 0 !important;
+            margin: 0 0.1rem !important;
+        }
+        
+        .el-pagination button:disabled {
+            height: 35px !important;
+            line-height: 35px !important;
+            background: rgba(0, 0, 0, 0) !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+</body>
+<script>
+</script>
+<script>
+    fnResize();
+    window.onresize = function() {
+        fnResize();
+    }
+
+    function fnResize() {
+        var deviceWidth = document.documentElement.clientWidth || window.innerWidth;
+        if (deviceWidth >= 750) {
+            deviceWidth = 750;
+        }
+        if (deviceWidth <= 320) {
+            deviceWidth = 320;
+        }
+        document.documentElement.style.fontSize = (deviceWidth / 7.5) + 'px';
+    }
+</script>
+
+</html>
